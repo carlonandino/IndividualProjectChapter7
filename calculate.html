@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TheQuestionGaming</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Question.css">
+<script src="modernizr.custom.65897.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1>The Question Gaming: What's my Console?</h1>
+<nav>
+	<a href="index.html">HOME</a>
+	<a href="xbox.html">XBOX</a>
+	<a href="playstation.html">Playstation</a>
+	<a href="nintendo.html">Nintendo</a>
+        <a href="safety.html">Safety</a>
+        <a href="calculate.html"> Mini Game</a>
+</nav>
+</header>
+<main>
+<div id="CalculateMain">
+</div>
+<h2>Magic Calculator Game</h2>
+<h3> Okay it's not magic but this page can calculate the time between two dates. Maybe you can use for
+ something like figuring out how much days till Christmas or your birthday and hopefully your gifted new console.
+</h3>
+<input type="date" id="d1">
+<input type="date" id="d2">
+<button onclick="calculateDays()">Calculate</button>
+<p id="output"></p>
+</body>
+<script>
+function calculateDays(){
+var d1= document.getElementById("d1").value;
+var d2= document.getElementById("d2").value;
+const dateOne = new Date(d1);
+const dateTwo = new Date(d2);
+const time = Math.abs(dateTwo - dateOne);
+const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+document.getElementById("output").innerHTML=days + " Days";
+}
+</script>
+</html>

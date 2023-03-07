@@ -1,0 +1,141 @@
+* { box-sizing: border-box; }
+body {color:#9b51e0; background-color:#000001; font-family:Lucida Fax; background-image: url(consolebackground.jpeg)
+}
+header {background-color:#253123; height:120px; background-image: url(thewhatseethrough.jpg); background-repeat: no-repeat; display:block;
+}
+h1 {text-align: center; padding-top: 40px; padding-left: 100px; font-size: 2.4em; 
+}
+nav {text-align: center; font-weight: bold; font-size: 1em; padding-left: 0em; padding-top: 8px; display:block;
+}
+nav a { text-decoration: none; padding-right: 30px;
+}
+nav a:link {color: #0693e3; 
+}
+nav a:visited {color: #0693e3; 
+}
+nav a:hover {color: #9b51e0; 
+}
+main {padding-left: 0; padding-right: 0; padding-bottom: 2em; padding-top: 3em; margin-left: 0px; background-color: #484a4a; display:block;
+}
+main h2 {text-align:center; }
+main h3 {text-align:center; }
+main h4 {padding-left: 3em; padding-right: 2em
+}
+main p {padding-left: 3em; padding-right: 2em; color: #0693e3;
+}
+main div {padding-left: 3em; padding-right: 2em; color: #9b51e0;
+}
+main ul {padding-left: 3em; padding-right: 2em; color: #0693e3;
+}
+main dl {padding-left: 3em; padding-right: 2em
+}
+h4 {background-color:#253123; font-size: 1.2em; padding-left: .5em; padding-bottom: .25em; text-transform: uppercase; padding-bottom: 0; border-bottom: 0; clear: left;
+}
+.details { padding-left: 20%; padding-right: 20%; overflow: auto; }
+.floatleft {float: left; padding-right: 2em; padding-bottom: 2em; }
+.floatright {float: right; padding-right: 2em; padding-bottom: 2em; }
+img {padding-left: 10px; padding-right: 10px;
+}
+footer {background-color:#000001; font-size:.60em; font-style:italic; text-align:center; padding-bottom: 10px; border-top: 2px solid #bf5206; display:block;
+}
+#wrapper{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#0693e3;
+	min-width:900px;
+	max-width:1280px;
+	box-shadow: 5px 5px 5px
+ 
+}
+#TheQuestionMain{
+	background-image: url(homeconsoles.jpeg);
+	background-size: 100% 100%;
+	height: 300px
+}
+#XboxMain{
+	background-image: url(xboxlogo.jpeg);
+	background-size: 100% 100%;
+	height: 300px
+}
+#PlaystationMain{
+	background-image: url(playstationlogo.jpeg);
+	background-size: 100% 100%;
+	height: 300px
+}
+#NintendoMain{	
+	background-image: url(nintendologo.jpeg);
+	background-size: 100% 100%;
+	height: 300px
+}
+#SafetyMain{	
+	background-image: url(datasecurity.jpg);
+	background-size: 100% 100%;
+	height: 300px
+}
+#CalculateMain{	
+	background-image: url(calculateback.jpg);
+	background-size: 100% 100%;
+	height: 300px
+}
+#mobile {display: none;}
+#desktop {display: inline;}
+table{margin:auto; width:90%; border-spacing:0;background-color:#8cc9ed;}
+th {padding:10px;}
+td {padding:10px;}
+tr:nth-of-type(odd){background-color:#253123;}
+
+@media only screen and (max-width: 1024px) {
+	body {margin: 0; background-image: none;}
+	#wrapper {width: auto; min-width: 0; margin: 0; padding: 0; box-shadow: none;}
+	header {border-bottom: 0px solid #FEF6C2;}
+	h1 {margin-top: 0; margin-bottom: 1em; padding-top: 40px; padding-bottom: 0em; font-size: 2.2em; padding-left: 200px;}
+	nav {float: none; width: auto; padding-top: 5px; margin: 10px; font-size: 1em; padding-left: 2em}
+	nav li {display: inline-block;}
+	nav a {padding: 1em; width: 8em; font-weight: bold; border-style: none;}
+	nav ul {padding: 0; margin: 0;}
+	#TheQuestionMain {margin: 0; padding: 0;}
+	#XboxMain {margin: 0; padding: 0;}
+	#PlaystatinMain {margin: 0; padding: 0;}
+	#NintendoMain {margin: 0; padding: 0;}
+	#SafetyMain {margin: 0; padding: 0;}
+	#CalculateMain {margin: 0; padding: 0;}
+	main {margin: 0; font-size: 90%;}
+}
+@media only screen and (max-width: 650px) {
+	header { background-image: url(thewhatseethrough.jpg); height:120px;}
+	h1 { font-size: 2.2em; text-align: center; padding-right: 1em; padding-bottom: 0em; padding-top: 30px; padding-left: 200px;}
+	nav {margin: 0; display:block; #FEF6C2; padding-top: 0px; padding-bottom: 0px; font-size: .83em; padding: 0px; }
+	main { padding-top:50px;}
+	h2 {padding-top: 0.5em; padding-right: 0; padding-bottom: 0px; padding-left: 0.5em; margin-right: 0.5em;}
+	.details { padding-left:0; padding-right:0;}
+	img.floatright {display:none;}
+	#TheQuestionMain {background-image: none; height: auto;}
+	#XboxMain {background-image: none; height: auto;}
+	#PlaystationMain {background-image: none; height: auto;}
+	#NintendoMain {background-image: none; height: auto;}
+	#SafetyMain {background-image: none; height: auto;}
+	#CalculateMain {background-image: none; height: auto;}
+	.floatleft { padding-left: 0.5em; padding-right: 0.5em;}
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
+@media only screen and (max-width: 450px) {
+	header { background-image: url(thewhatseethrough.jpg); height:120px;}
+	h1 { font-size: 1.6em; text-align: center; padding-right: 1em; padding-bottom: 0em; padding-top: 30px; padding-left: 200px;}
+	nav {margin: 0; display:block; #000001; padding-top: 0px; padding-bottom: 0px; font-size: .83em; padding: 0px; }
+	main { padding-top:50px;}
+	h2 {padding-top: 0.5em; padding-right: 0; padding-bottom: 0px; padding-left: 0.5em; margin-right: 0.5em;}
+	.details { padding-left:0; padding-right:0;}
+	img.floatright {display:none;}
+	#TheQuestionMain {background-image: none; height: auto;}
+	#XboxMain {background-image: none; height: auto;}
+	#PlaystationMain {background-image: none; height: auto;}
+	#NintendoMain {background-image: none; height: auto;}
+	#ReviewMain {background-image: none; height: auto;}
+	#SafetyMain {background-image: none; height: auto;}
+	#CalculateMain {background-image: none; height: auto;}
+	.floatleft { padding-left: 0.5em; padding-right: 0.5em;}
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
